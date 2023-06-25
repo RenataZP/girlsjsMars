@@ -11,7 +11,7 @@ function getPicture() {
             changeBackground(data.hdurl);
         });
 }
-getPicture()
+getPicture();
 let mars = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=3vrVvV6XlrREhg8f1uT7SVWnQMe2nFb2sEeR1dWF';
 function getMarsPicture() {
     fetch(mars)
@@ -23,7 +23,7 @@ function getMarsPicture() {
             createGallery(pictureList);
         });
 }
-getMarsPicture()
+getMarsPicture();
 let gallery = document.getElementById('content');
 function createGallery(dataList) {
     for(let i=0; i < 9; i++) {
